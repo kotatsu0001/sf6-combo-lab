@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SF6 コンボ計算ツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>SF6 コンボ計算ツール</h1>
+  <div class="character-select">
+    <label for="character">キャラクター：</label>
+    <select id="character">
+      <option value="juri">ジュリ</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <div class="builder-area">
+
+    <!-- 技リスト -->
+    <section class="move-picker">
+      <h2>技リスト</h2>
+      <div class="category-tabs">
+        <button class="tab-btn active" data-category="all">全て</button>
+        <button class="tab-btn" data-category="normal">通常技</button>
+        <button class="tab-btn" data-category="unique">特殊技</button>
+        <button class="tab-btn" data-category="special">必殺技</button>
+        <button class="tab-btn" data-category="sa">SA</button>
+      </div>
+      <div class="move-search">
+        <input type="text" id="move-search" placeholder="技名で絞り込み...">
+      </div>
+      <div id="move-list" class="move-list">
+        <p class="no-data">フレームデータを読み込んでいます...</p>
+      </div>
+    </section>
+
+    <!-- コンボ入力 -->
+    <section class="combo-builder">
+      <h2>コンボ入力</h2>
+      <div class="rush-buttons">
+        <button id="add-normal-rush" class="rush-btn normal-rush-btn">生ラッシュ追加</button>
+        <button id="add-cancel-dr" class="rush-btn cancel-dr-btn">キャンセルDR追加</button>
+      </div>
+      <div id="combo-list" class="combo-list">
+        <p class="empty-combo">技を選択してコンボを組み立てましょう</p>
+      </div>
+      <button id="clear-combo" class="btn-danger">コンボをリセット</button>
+    </section>
+
+  </div>
+
+  <!-- 計算結果 -->
+  <section class="results-section">
+    <h2>計算結果</h2>
+    <div id="results-content" class="results-empty">
+      <p>コンボを入力すると結果が表示されます</p>
+    </div>
+  </section>
+
+  <!-- コンボ保存 -->
+  <section class="save-section">
+    <h2>コンボ保存</h2>
+    <div class="save-form">
+      <input type="text" id="combo-name" placeholder="コンボ名を入力（例：SA3締めコンボ①）">
+      <button id="save-combo">保存</button>
+    </div>
+  </section>
+
+  <!-- 保存済みコンボ -->
+  <section class="saved-combos-section">
+    <h2>保存済みコンボ</h2>
+    <div id="saved-list" class="saved-list">
+      <p class="no-saved">保存済みコンボはありません</p>
+    </div>
+  </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
