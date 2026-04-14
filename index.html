@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SF6 コンボ計算ツール</title>
+  <title>SF6 COMBO LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>SF6 コンボ計算ツール</h1>
+  <h1><em>SF6</em> COMBO LAB</h1>
   <div class="character-select">
-    <label for="character">キャラクター：</label>
+    <label for="character">CHARACTER</label>
     <select id="character">
       <option value="juri">ジュリ</option>
     </select>
@@ -25,7 +28,7 @@
     <section class="move-picker">
       <h2>技リスト</h2>
       <div class="category-tabs">
-        <button class="tab-btn active" data-category="all">全て</button>
+        <button class="tab-btn active" data-category="all">ALL</button>
         <button class="tab-btn" data-category="normal">通常技</button>
         <button class="tab-btn" data-category="unique">特殊技</button>
         <button class="tab-btn" data-category="special">必殺技</button>
@@ -43,8 +46,8 @@
     <section class="combo-builder">
       <h2>コンボ入力</h2>
       <div class="rush-buttons">
-        <button id="add-normal-rush" class="rush-btn normal-rush-btn">生ラッシュ追加</button>
-        <button id="add-cancel-dr" class="rush-btn cancel-dr-btn">キャンセルDR追加</button>
+        <button id="add-normal-rush" class="rush-btn normal-rush-btn">生ラッシュ</button>
+        <button id="add-cancel-dr" class="rush-btn cancel-dr-btn">キャンセル DR</button>
       </div>
       <div id="combo-list" class="combo-list">
         <p class="empty-combo">技を選択してコンボを組み立てましょう</p>
