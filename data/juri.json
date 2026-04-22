@@ -756,6 +756,23 @@
       "notes": "最低保証30%。ボタンホールドで風破ストック消費し+300ダメージ"
     },
     {
+      "id": "sa1-1",
+      "name": "SA1 殺界風破斬（強化版）",
+      "fullName": "SA1 殺界風破斬（強化版）",
+      "category": "sa",
+      "damage": 2100,
+      "startupCorrection": 0,
+      "comboCorrection": 0,
+      "instantCorrection": 0,
+      "instantCorrectionCondition": null,
+      "multiplyCorrection": 100,
+      "driveGaugeHit": 0,
+      "saGauge": 0,
+      "isOD": false,
+      "minGuarantee": 30,
+      "notes": "最低保証30%。ボタンホールドで風破ストック消費し+300ダメージ"
+    },
+    {
       "id": "sa2_rush",
       "name": "SA2 風水エンジン（突進）",
       "fullName": "SA2 風水エンジン（突進）",
